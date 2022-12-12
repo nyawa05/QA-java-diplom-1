@@ -9,6 +9,6 @@ public class BunGenerator {
     public static String randomName() {
         return RandomStringUtils.randomAlphabetic(targetStringLength);
     }
-    public static float randomPrice() { return RandomUtils.nextFloat(); }
+    public static float randomPrice() { return RandomUtils.nextFloat(0f,6f); }
 
 }

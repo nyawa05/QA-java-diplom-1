@@ -17,11 +17,9 @@ public class BunTest {
         this.price = price;
     }
 
-    @Parameterized.Parameters
+    @Parameterized.Parameters(name = "Тестовые данные: {0} {1}")
     public static Object[][] getBunData() {
         return new Object[][]{
-                {BunGenerator.randomName(), BunGenerator.randomPrice()},
-                {BunGenerator.randomName(), BunGenerator.randomPrice()},
                 {BunGenerator.randomName(), BunGenerator.randomPrice()},
                 {BunGenerator.randomName(), BunGenerator.randomPrice()},
                 {BunGenerator.randomName(), BunGenerator.randomPrice()},
